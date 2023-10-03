@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="res/css/style.css">
+        <title>PostIt</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="addPost.html">addPost</a></li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <h3>Welcome to PostIt</h3>
+            <div class="container">
+                <span class="psw"> <a href="#">Create an Account</a></span>
+            </div>
+            <p>or</p>
+            <p>Please log in</p>
+            <form id="login-form">
+                <input type="email" name="form-input" id="email" placeholder="Email" required><br>
+                <input type="password" name="form-input" id="password" placeholder="Password" required><br>
+                <!-- <input type="button" name="btn" id="btn" value="Log in"> -->
+                <button type="submit" id="login-submit">Log in</button>
+            </form>
+            <div class="container">
+                <!-- <button type="button" class="cancelbtn">Forget password</button> -->
+                <span class="psw"> <a href="#">Forget password</a></span>
+            </div>
+        </section>
+        <script src="login.js"></script>
+    </body>
+</html>
