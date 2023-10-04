@@ -13,6 +13,7 @@
 
 .nav {
     margin-top: 5px;
+    margin-left: 5px;
 }
 
 .nav a {
@@ -63,10 +64,18 @@ span.psw {
     padding-top: 16px;
 }
 
+button {
+    background-color: blue;
+}
+
+button a {
+    color: white;
+}
+
 #login-submit {
     margin-top: 10px;
 }
 
-#login-submit:hover {
-    background-color: darkgray;
+#post-submit {
+    margin-top: 30px;
 }

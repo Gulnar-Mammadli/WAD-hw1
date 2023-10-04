@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="res/css/style.css">
+        <title>PostIt</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="addPost.html">addPost</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section>
+                <form id="add-post-form">
+                    <div class="text-msg">
+                        <label for="message" id="msg-label">Post body</label>
+                        <textarea id="message" name="message" placeholder="textarea" style="height:100px"></textarea><br><br>
+                    </div>
+                    <label for="file" id="file-label">Select file</label>
+                    <input type="file" name="file" id="file" value="Choose file" ><br>
+                    <button type="submit" id="post-submit"><a href="index.html">Create post</a></button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
