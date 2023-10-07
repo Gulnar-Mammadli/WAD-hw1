@@ -26,8 +26,12 @@
                         <label for="message" id="msg-label">Post body</label>
                         <textarea id="message" name="message" placeholder="textarea" style="height:100px"></textarea><br><br>
                     </div>
-                    <label for="file" id="file-label">Select file</label>
-                    <input type="file" name="file" id="file" value="Choose file" ><br>
+                    <div class="file">
+                        <label >Select file</label>
+                        <label for="file" id="file-label">Choose file</label>
+                        <input type="file" name="input-file" id="file">
+                      </div>
+                      
                     <button type="submit" id="post-submit"><a href="index.html">Create post</a></button>
                 </form>
             </section>

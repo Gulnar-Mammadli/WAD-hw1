@@ -94,3 +94,18 @@ button a {
 #post-submit {
     margin-top: 30px;
 }
+
+#message {
+    vertical-align: top;
+}
+
+.file input {
+    display: none;  
+}
+
+.file #file-label {
+    background-color: darkgray;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
