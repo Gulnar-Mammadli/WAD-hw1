@@ -12,28 +12,25 @@
             <div class="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="addPost.html">addPost</a></li>
                 </ul>
             </div>
             <div class="profile">
                 <img id="photo" src="res/profile-icon.jpg" alt="Profile picture">
             </div>
         </header>
-        <section>
-            <h3>Welcome to PostIt</h3>
-            <div class="container">
-                <span class="psw"> <a href="#">Create an Account</a></span>
+        <main>
+            <div class="box text-center">         
+                <h3>Welcome to PostIt</h3>
+                <a href="#">Create an Account</a>
+                <p>or</p>
+                <p>Please log in</p>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Email" required><br>
+                    <input type="password" name="password" id="password" placeholder="Password" required><br>
+                    <button type="submit" id="login-submit"><a href="index.html">Log in</a></button>
+                </form>
+                <a href="#" class="d-inline-block mt-15">Forget password</a>
             </div>
-            <p>or</p>
-            <p>Please log in</p>
-            <form id="login-form">
-                <input type="email" name="form-input" id="email" placeholder="Email" required><br>
-                <input type="password" name="form-input" id="password" placeholder="Password" required><br>
-                <button type="submit" id="login-submit"><a href="index.html">Log in</a></button>
-            </form>
-            <div class="container">
-                <span class="psw"> <a href="#">Forget password</a></span>
-            </div>
-        </section>
+        </main>
     </body>
 </html>

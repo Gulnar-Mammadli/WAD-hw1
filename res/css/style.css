@@ -4,18 +4,13 @@
 }
 
 .header {
-    padding-top: 1.0em;
-    padding-bottom: 1.0em;
+    padding: 15px 10px;
     border: 1px solid darkgray;
     background-color: lightgray;
     border-radius: 10px;  
-    overflow: hidden;
-}
-
-.nav {
-    margin-top: 5px;
-    margin-left: 5px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav a {
@@ -28,12 +23,6 @@
     background-color:#34495e;
     color: darkgray;
     border-radius: 5px;
-}
-
-.profile {
-    margin-top: 5px;
-    margin-left: 5px;
-    display: inline;
 }
 
 #photo {
@@ -56,19 +45,7 @@ li {
 a {
     color: mediumblue;
     text-decoration: none;
-} 
-
-section {
-    padding: 10px 15px;
-    margin: auto;
-    margin-top: 35px;
-    display: block;
-    text-align: center;
-    border: 1px solid darkgray;
-    width: 300px;
-    background-color: lightgray;
-    border-radius: 10px;
-}    
+}
 
 .container {
     padding: 16px;
@@ -162,4 +139,41 @@ footer {
     text-align: center;
     background-color: lightgrey;
     border-radius: 10px;
+}
+
+/* grid */
+
+h3 {
+    margin-top: 0;
+}
+
+main {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0;
+}
+
+.box {
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+form input {
+    margin-bottom: 8px;
+    height: 30px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.d-inline-block {
+    display: inline-block;
 }
