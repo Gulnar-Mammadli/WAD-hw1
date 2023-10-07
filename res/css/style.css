@@ -74,6 +74,8 @@ button a {
 
 #message {
     vertical-align: top;
+    flex-shrink: 0;
+    flex-grow: 1;
 }
 
 .file input {
@@ -85,6 +87,7 @@ button a {
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
+    display: inline-block;
 }
 
 /* index */
@@ -148,7 +151,7 @@ h3 {
 }
 
 main {
-    width: 350px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     padding: 25px 0;
@@ -168,6 +171,9 @@ main {
 form input {
     margin-bottom: 8px;
     height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mt-15 {
@@ -176,4 +182,21 @@ form input {
 
 .d-inline-block {
     display: inline-block;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* addPost */
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form-group > label {
+    width: 20%;
+    text-align: right;
+    margin-right: 10px;
 }
