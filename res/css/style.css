@@ -109,3 +109,57 @@ button a {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+/* index */
+
+.temp {
+    background-color: transparent;
+    text-align: left;
+    border: 0;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+article > img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.post_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post_heading > img {
+    width: 30px;
+    height: 30px;
+}
+
+.post_footer {
+    display: flex;
+    align-items: center;
+}
+
+.post_footer > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.post_footer > img ~ span {
+    margin-right: 10px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
