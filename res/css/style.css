@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-.header {
+header {
     padding: 15px 10px;
     border: 1px solid darkgray;
     background-color: lightgray;
@@ -13,11 +13,11 @@
     justify-content: space-between;
 }
 
-.nav li:not(:first-child) {
+nav li:not(:first-child) {
     position: relative;
 }
 
-.nav li:not(:first-child)::before {
+nav li:not(:first-child)::before {
     content: '';
     position: absolute;
     left: 0;
@@ -28,13 +28,13 @@
     display: inline-block;
 }
 
-.nav a {
+nav a {
     padding: 10px 15px;
     color: black;
     font-size: .99em;
 }
 
-.nav a:hover {
+nav a:hover {
     background-color:#34495e;
     color: darkgray;
     border-radius: 5px;
@@ -71,15 +71,6 @@ a {
 span.psw {
     padding-top: 16px;
 }
-
-button {
-    background-color: blue;
-}
-
-button a {
-    color: white;
-}
-
 #login-submit {
     margin-top: 10px;
 }
@@ -197,6 +188,13 @@ form input {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+form button {
+    padding: 0 20px;
+    height: 36px;
+    background-color: blue;
+    color: #fff;
 }
 
 .mt-15 {
