@@ -9,11 +9,13 @@
     border: 1px solid darkgray;
     background-color: lightgray;
     border-radius: 10px;  
+    overflow: hidden;
 }
 
 .nav {
     margin-top: 5px;
     margin-left: 5px;
+    display: inline-block;
 }
 
 .nav a {
@@ -26,6 +28,19 @@
     background-color:#34495e;
     color: darkgray;
     border-radius: 5px;
+}
+
+.profile {
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline;
+}
+
+#photo {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 15px;
 }
 
 ul {
