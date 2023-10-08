@@ -43,7 +43,7 @@ nav a:hover {
 #photo {
     width: 40px;
     height: 40px;
-    float: right;
+    /* float: right; */
     margin-right: 15px;
 }
 
@@ -63,14 +63,14 @@ a {
     text-decoration: none;
 }
 
-.container {
+/* .container {
     padding: 16px;
     text-align: center;
-}
+} */
 
-span.psw {
+/* span.psw {
     padding-top: 16px;
-}
+} */
 #login-submit {
     margin-top: 10px;
 }
