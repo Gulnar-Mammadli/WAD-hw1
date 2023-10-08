@@ -230,7 +230,7 @@ form button {
 }
 
 .file #file-label {
-    background-color: darkgray;
+    background-color: #666666;
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
