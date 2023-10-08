@@ -1,0 +1,3 @@
+Team: Group AZ
+Team members: Leyla Rahimli, Gulnar Mammadli
+Project link: https://github.com/Gulnar-Mammadli/WAD-hw1
