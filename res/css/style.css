@@ -3,6 +3,44 @@
     box-sizing: border-box;
 }
 
+h3 {
+    margin-top: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+
+a {
+    color: mediumblue;
+    text-decoration: none;
+}
+
+/* utilities */ 
+
+.text-center {
+    text-align: center;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.box {
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* header */
+
 header {
     padding: 15px 10px;
     border: 1px solid darkgray;
@@ -11,6 +49,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+nav ul {
+    display: flex; 
 }
 
 nav li:not(:first-child) {
@@ -36,72 +78,64 @@ nav a {
 
 nav a:hover {
     background-color:#34495e;
-    color: darkgray;
+    color: #f1f1f1;
     border-radius: 5px;
 }
 
 #photo {
     width: 40px;
     height: 40px;
-    /* float: right; */
-    margin-right: 15px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;   
-    display: flex; 
+/* footer */
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 10px;
 }
 
-li {
-    display: inline;
+/* grid */
+
+main {
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-a {
-    color: mediumblue;
-    text-decoration: none;
+aside {
+    flex: 0.5 1 0;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-#login-submit {
-    margin-top: 10px;
+section {
+    flex: 2 0 0;
 }
 
-#post-submit {
-    margin-top: 30px;
+@media (min-width: 481px) {
+    section.section-small {
+        flex: 0 0 300px;
+    }
 }
 
-#message {
-    vertical-align: top;
-    flex-shrink: 0;
-    flex-grow: 1;
-}
-
-.file input {
-    display: none;  
-}
-
-.file #file-label {
-    background-color: darkgray;
-    color: #fff;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: inline-block;
+@media (max-width: 480px) {
+    section {
+        flex: 0 0 85vw;
+    }
+    aside {
+        display: none;
+    }
 }
 
 /* index */
 
-.temp {
-    background-color: transparent;
-    text-align: left;
-    border: 0;
-}
-
-article {
-    padding: 10px;
+article:not(:last-child) {
     margin-bottom: 20px;
-    background-color: lightgrey;
-    border-radius: 10px;
 }
 
 .post_heading {
@@ -136,10 +170,6 @@ article {
     margin-top: 10px;
 }
 
-.post_body > p {
-    margin: 0;
-}
-
 .post_footer {
     display: flex;
     align-items: center;
@@ -155,36 +185,7 @@ article {
     margin-right: 10px;
 }
 
-footer {
-    padding: 15px;
-    text-align: center;
-    background-color: lightgrey;
-    border-radius: 10px;
-}
-
-/* grid */
-
-h3 {
-    margin-top: 0;
-}
-
-main {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25px 0;
-}
-
-.box {
-    background-color: lightgray;
-    border: 1px solid darkgray;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-.text-center {
-    text-align: center;
-}
+/* login */
 
 form input {
     margin-bottom: 8px;
@@ -201,20 +202,12 @@ form button {
     color: #fff;
 }
 
-.mt-15 {
-    margin-top: 15px;
-}
-
-.d-inline-block {
-    display: inline-block;
-}
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+#login-submit {
+    margin-top: 10px;
 }
 
 /* addPost */
+
 .form-group {
     display: flex;
     margin-bottom: 15px;
@@ -224,4 +217,26 @@ form button {
     width: 20%;
     text-align: right;
     margin-right: 10px;
+}
+
+#post-submit {
+    margin-top: 30px;
+}
+
+#message {
+    vertical-align: top;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.file #file-label {
+    background-color: darkgray;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.file input {
+    display: none;  
 }
