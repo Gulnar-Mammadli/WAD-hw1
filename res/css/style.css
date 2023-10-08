@@ -125,15 +125,27 @@ article {
 
 .post_body {
     padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .post_body > img {
     width: 100%;
-    margin-bottom: 16px;
 }
 
 .post_body > p {
-    margin-top: 0;
+    margin: 0;
+}
+
+.post_body > img ~ p {
+    margin-top: 10px;
+}
+
+.post_body > :not(:first-child) {
+    margin-top: 10px;
+}
+
+.post_body > p {
+    margin: 0;
 }
 
 .post_footer {
@@ -147,7 +159,7 @@ article {
     margin-right: 5px;
 }
 
-.post_footer > img ~ span {
+.post_footer > img + span {
     margin-right: 10px;
 }
 
