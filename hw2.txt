@@ -1,0 +1,4 @@
+Team: Group AZ
+Team members: Leyla Rahimli, Gulnar Mammadli
+Project link: https://github.com/Gulnar-Mammadli/WAD-hw1
+Json API: https://www.npoint.io/docs/5f4bc9dc3e2b6adc8b6b
