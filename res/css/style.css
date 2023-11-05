@@ -10,7 +10,7 @@ h3 {
 ul {
     margin: 0;
     padding: 0;
-    list-style: none;   
+    list-style: none;
 }
 
 a {
@@ -18,7 +18,7 @@ a {
     text-decoration: none;
 }
 
-/* utilities */ 
+/* utilities */
 
 .text-center {
     text-align: center;
@@ -45,14 +45,14 @@ header {
     padding: 15px 10px;
     border: 1px solid darkgray;
     background-color: lightgray;
-    border-radius: 10px;  
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 nav ul {
-    display: flex; 
+    display: flex;
 }
 
 nav li:not(:first-child) {
@@ -60,7 +60,7 @@ nav li:not(:first-child) {
 }
 
 nav li:not(:first-child)::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -73,11 +73,11 @@ nav li:not(:first-child)::before {
 nav a {
     padding: 10px 15px;
     color: black;
-    font-size: .99em;
+    font-size: 0.99em;
 }
 
 nav a:hover {
-    background-color:#34495e;
+    background-color: #34495e;
     color: #f1f1f1;
     border-radius: 5px;
 }
@@ -142,9 +142,24 @@ article:not(:last-child) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 4px;
 }
 
-.post_heading > img {
+@media (max-width: 480px) {
+    .post_heading > span {
+        font-size: 14px;
+    }
+}
+
+.post_author {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.post_author > img {
     width: 30px;
     height: 30px;
 }
@@ -238,5 +253,5 @@ form button {
 }
 
 .file input {
-    display: none;  
+    display: none;
 }
