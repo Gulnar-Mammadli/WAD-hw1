@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="res/css/style.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="res/css/style.css">
         <title>PostIt</title>
     </head>
     <body>
@@ -16,8 +16,15 @@
                 </ul>
             </nav>
             <div class="profile">
-                <img id="photo" src="res/images/user.png" alt="Profile picture" />
-            </div>
+                <button onclick="myFunction()" class="dropbtn">
+                    <img id="photo" src="res/images/user.png" alt="Profile picture">
+                </button>
+                <div id="dropdown" class="dropdown-content">
+                  <a href="#">Gulnar Mammadli</a>
+                  <a href="#">mammadli@ut.ee</a>
+                  <a href="#">logout</a>
+                </div>
+            </div>  
         </header>
         <main class="flex-wrapper">
             <aside></aside>
@@ -106,5 +113,6 @@
         </main>
         <footer>Footer</footer>
         <script src="res/js/main.js"></script>
+        <script type = "text/javascript" src="res/js/dropdown.js"></script>  
     </body>
 </html>

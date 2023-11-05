@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type = "text/javascript" src="res/js/dropdown.js"></script>  
         <link rel="stylesheet" href="res/css/style.css">
         <title>PostIt</title>
     </head>
@@ -15,7 +16,14 @@
                 </ul>
             </nav>
             <div class="profile">
-                <img id="photo" src="res/images/user.png" alt="Profile picture">
+                <button onclick="myFunction()" class="dropbtn">
+                    <img id="photo" src="res/images/user.png" alt="Profile picture">
+                </button>
+                <div id="dropdown" class="dropdown-content">
+                    <a href="#">Gulnar Mammadli</a>
+                    <a href="#">mammadli@ut.ee</a>
+                    <a href="#">logout</a>
+                </div>
             </div>
         </header>
         <main>
